@@ -136,6 +136,8 @@ a {
   width:100%; 
   display:block;
   text-align:left;
+  
+  border:1px solid pink;
   background:green;
 }
 /*搜索 end*/
