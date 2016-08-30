@@ -61,6 +61,7 @@ a {
   font-size: 0.54rem;
   color: #333;
   width:100%;
+  background:red;
   
 }
 
@@ -135,7 +136,7 @@ a {
   width:100%; 
   display:block;
   text-align:left;
-  background:red;
+  background:green;
 }
 /*搜索 end*/
 
