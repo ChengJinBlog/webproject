@@ -37,6 +37,7 @@ a {
   width: 1.32rem;
   color: #ffffff;
   font-size: 0.54rem;
+  text-align:center;
 }
 .navbar .navbar-container-fluid .navbar-link {
   position: absolute;
