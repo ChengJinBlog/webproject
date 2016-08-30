@@ -115,6 +115,7 @@ a {
 
 .navbar-right{
   display: block;
+  
 }
 .seach-deleIcon{
   float:right;
@@ -131,7 +132,7 @@ a {
   font-family: "微软雅黑", "Droid Sans Fallback";
   width:100%; 
   display:block;
-  text-align:center;
+  text-align:left;
   background:red;
 }
 /*搜索 end*/
