@@ -50,6 +50,7 @@ a {
   width:1.32rem;*/
   right: -1.1rem;
   width: 2.52rem;
+  
 }
 .navbar .navbar-container-fluid .navbar-link .navbar-brand {
   display: block;
@@ -58,8 +59,7 @@ a {
   text-align: center;
   font-size: 0.54rem;
   color: #333;
-  width:100%;
-  background:red;
+  
 }
 
 
@@ -129,8 +129,9 @@ a {
   outline:none;
   font-size: 0.42rem;
   font-family: "微软雅黑", "Droid Sans Fallback";
-  width:100%;  
-  text-align:left;
+  width:100%; 
+  display:block;
+  text-align:center;
 }
 /*搜索 end*/
 
