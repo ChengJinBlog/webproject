@@ -50,16 +50,17 @@ a {
  /* right: 0rem;  
   width:1.32rem;*/
   right: 0rem;
-  width: 1.32rem;
+  width: 1.5rem;
   
 }
 .navbar .navbar-container-fluid .navbar-link .navbar-brand {
   display: block;
-  height: 1.32rem;
+  height: 1.5rem;
   line-height: 1.32rem;
   text-align: center;
   font-size: 0.54rem;
   color: #333;
+  width:100%;
   
 }
 
