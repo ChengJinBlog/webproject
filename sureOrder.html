@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="./stylesheets/common/reset.css">
+    <link href="./stylesheets/common/iconfont.css" rel="stylesheet" media="screen, projection">
+    <link rel="stylesheet" href="./stylesheets/sureOrder.css">
+    <link rel="stylesheet" href="./stylesheets/common/navigation.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-container-fluid">
+        <div class="navbar-link">
+            <a class="navbar-brand iconfont icon-iconreturndefault back" href="#"></a>
+        </div>
+        <div class="navbar-main">
+            <h1 id="navbar-title">确认订单</h1>
+        </div>
+        <div class="navbar-link navbar-right">
+            <a class="navbar-brand iconfont icon-fanhui" href="#"></a>
+        </div>
+    </div>
+</nav>
+
+<section class="container-main">
+	<form action="http://172.168.6.134/index.php/app/trade-create.html" method="post" id="form_settle">
+    <a href="noName.html" class="a-content">
+        <div class="receive-mes">
+            <i class="iconfont icon-iconwodedefault"></i>
+            <div class="text">
+                <span>收货人</span>
+                <div>
+                    <span class="chose">选择</span>
+                    <span class="change hidden">更改</span>
+                    <i class="iconfont icon-iconmoredefault"></i>
+                </div>
+            </div>
+            <div class="particular-mes hidden">
+               <div>
+                   <span class="name">
+             			<span class="mobile"></span>
+                   </span>
+               </div>
+            </div>
+        </div>
+    </a>
+
+    <a href="findAddress.html" class="a-content">
+        <div class="receive-mes">
+            <i class="iconfont icon-icon28"></i>
+            <div class="text">
+                <span>自提点</span>
+                <div>
+                    <span class="chose">选择</span>
+                    <span class="change hidden">更改</span>
+                    <i class="iconfont icon-iconmoredefault"></i>
+                </div>
+            </div>
+            <div class="particular-mes hidden">
+                <div>
+                	<span class="address">
+                		<p>
+                			<span class="mobile"></span>
+                		</p>
+                	</span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <div class="good-message-wrap">
+        <div class="good-message">
+            <div class="line"></div>
+            <div><img src="images/goods.png"></div>
+            <div class="good-message-content">
+                <p>小麦一碰三防套餐产品组合 ( 高效氯氟氰菊脂100g x1 + 世典苯醚甲环锉10春耕解决方案 ) </p>
+                <span>瑞功g x1 + 好鲜收含海藻酸水溶肥功g x1 + 好鲜收含海藻酸水料10ml x1</span>
+                <p>¥ 32.50<span class="count">x1</span></p>
+            </div>
+        </div>
+        <!--<div class="good-message">-->
+            <!--<div class="line"></div>-->
+            <!--<div><img src="images/goods.png"></div>-->
+            <!--<div class="good-message-content">-->
+                <!--<p>小麦一碰三防套餐产品组合 ( 春耕解决方案 ) </p>-->
+                <!--<span>瑞功高效氯氟氰菊脂100g x1 + 世典苯醚甲环锉10g x1 + 好鲜收含海藻酸水溶肥料10ml x1</span>-->
+                <!--<p>¥ 32.50<span class="count">x1</span></p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!---->
+    </div>
+
+    <div class="leave-message-wrap">
+        <input type="text" class="leave-message" placeholder="捎句话给自提点吧（点击填写）" oninput="change()">
+        <i class="iconfont icon-icondeletedefault leave-img hidden"></i>
+    </div>
+
+    <div class="countSum-wrap">
+        <div class="countSum">
+            共<span>1</span>件商品
+            <span class="sum">合计:</span>
+            <span class="price">¥32.50</span>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="countSum">
+            <span class="sum">合计:</span>
+            <span class="price">¥32.50</span>
+            <button type="button" class="order btnJump" title="http://127.0.0.1:8020/%E7%A1%AE%E8%AE%A4%E8%AE%A2%E5%8D%95/product-detail.html">提交订单</button>
+        </div>
+    </div>
+    </form>
+</section>
+
+<script type="text/javascript" src="script/common/zepto.min.js"></script>
+<script type="text/javascript" src="script/common/utls.js"></script>
+<script src="script/adaptive.js"></script>
+<script src="script/sureOrder.js"></script>
+</body>
+</html>

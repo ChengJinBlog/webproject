@@ -1,0 +1,284 @@
+body {
+  font-family: "微软雅黑", "Droid Sans Fallback";
+  color: #666;
+  margin: 0 auto;
+  width: 100%;
+  background: #ebebeb;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color :rgba(0, 0, 0, 0)
+
+}
+a {
+  text-decoration: none;
+}
+/*--头部 start--*/
+.navbar {
+  background: #fafafa;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.navbar .navbar-container-fluid {
+  height: 1.32rem;
+  position: relative;
+}
+.navbar .navbar-container-fluid .navbar-main {
+  width: 100%;
+  /*background:red;*/
+  height: 1.32rem;
+  line-height: 1.32rem;
+  text-align: center;
+  color: #333;
+  font-size: 0.54rem;
+  margin: 0 auto;
+}
+.navbar .navbar-container-fluid .navbar-link {
+  width: 1.32rem;
+  color: #ffffff;
+  font-size: 0.54rem;
+}
+.navbar .navbar-container-fluid .navbar-link {
+  position: absolute;
+  top: 0;
+}
+.navbar .navbar-container-fluid .navbar-link:first-child {
+  left: 0;
+}
+.navbar .navbar-container-fluid .navbar-link:last-child {
+  right: 0;
+}
+.navbar .navbar-container-fluid .navbar-link .navbar-brand {
+  display: block;
+  height: 1.32rem;
+  line-height: 1.32rem;
+  text-align: center;
+  font-size: 0.54rem;
+  color: #333;
+}
+
+
+/*搜索 start*/
+/*.navbar .navbar-container-fluid .navbar-main .navbar-seachGoodlsAddr {
+  float: left;
+  height: 0.9rem;
+  margin-top: 0.21rem;
+  background: #FFF;
+  border-radius: 0.1rem;
+  line-height: 0.9rem;
+  padding: 0 0.2rem;
+  overflow: hidden;
+  margin-left:1.32rem;
+  !*width:73%;*!
+  width:80%;
+}
+.navbar .navbar-container-fluid .navbar-main .navbar-seachGoodlsAddr .navbar-seach {
+  height: 0.66rem;
+  line-height: 0.66rem;
+  font-size: 0.48rem;
+  outline: none;
+  border: none;
+  float: left;
+  background: none;
+  color: #999;
+  !*-webkit-box-shadow: 0 0 0px 1000px @greena inset;*!
+  font-family: "微软雅黑", "Droid Sans Fallback";
+  width: 6.5rem;
+  margin-top: 0.1rem;
+}
+.navbar-seach::-webkit-input-placeholder {
+  color: #ccc;
+}
+.navbar .navbar-container-fluid .navbar-main .navbar-seachGoodlsAddr .navbar-btn {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.68rem;
+  float: left;
+  border: none;
+  outline: none;
+  color: #999;
+  font-size: 0.54rem;
+  margin-top: 0.12rem;
+  background: none;
+
+}
+.seach-deleIcon{
+  color:#ccc;
+  display:none;
+}
+
+  .navbar-right{
+    display: none;
+  }
+  .seach-deleIcon{
+    float:right;
+    font-size:0.5rem;
+  }
+  .ui-searchbar-cancel{
+    height: 1.32rem;
+    line-height: 1.32rem;
+    background:#fafafa;
+    color:#999;
+    border:none;
+    outline:none;
+    font-size: 0.42rem;
+    font-family: "微软雅黑", "Droid Sans Fallback";
+    padding:0 0.2rem;
+
+  }*/
+
+/*搜索 start*/
+.navbar .navbar-container-fluid .navbar-main .navbar-seachGoodlsAddr {
+  float: left;
+  height: 0.9rem;
+  margin-top: 0.21rem;
+  background: #FFF;
+  border-radius: 0.1rem;
+  line-height: 0.9rem;
+  padding: 0 0.2rem;
+  overflow: hidden;
+  margin-left:1.32rem;
+  width:70%;
+
+}
+.navbar .navbar-container-fluid .navbar-main .navbar-seachGoodlsAddr .navbar-seach {
+  height: 0.66rem;
+  line-height: 0.66rem;
+  font-size: 0.48rem;
+  outline: none;
+  border: none;
+  float: left;
+  background: none;
+  color: #999;
+  /*-webkit-box-shadow: 0 0 0px 1000px @greena inset;*/
+  font-family: "微软雅黑", "Droid Sans Fallback";
+  width: 6.5rem;
+  margin-top: 0.1rem;
+}
+.navbar-seach::-webkit-input-placeholder {
+  color: #ccc;
+}
+.navbar .navbar-container-fluid .navbar-main .navbar-seachGoodlsAddr .navbar-btn {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.68rem;
+  float: left;
+  border: none;
+  outline: none;
+  color: #999;
+  font-size: 0.54rem;
+  margin-top: 0.12rem;
+  background: none;
+
+}
+.seach-deleIcon{
+  color:#ccc;
+  display:none;
+  margin-right:0.24rem;
+}
+
+.navbar-right{
+  display: block;
+}
+.seach-deleIcon{
+  float:right;
+  font-size:0.5rem;
+}
+.ui-searchbar-cancel{
+  height: 1.32rem;
+  line-height: 1.32rem;
+  background:#fafafa;
+  color:#00a53c;
+  border:none;
+  outline:none;
+  font-size: 0.42rem;
+  font-family: "微软雅黑", "Droid Sans Fallback";
+  /*padding:0 0.24rem;*/
+
+}
+/*搜索 end*/
+
+  /*搜索 end*/
+
+
+
+/*--头部 end--*/
+/*--内容区 start--*/
+.container-main {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  margin-top: 1.32rem;
+  margin-bottom: 1.48rem;
+}
+.container-main .inform {
+  height: 2600px;
+  background: gold;
+}
+/*--内容区 end--*/
+/*--底部 start--*/
+.footer {
+  background: #ffffff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+/*--底部 end--*/
+
+/*--弹出框--*/
+.ui-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background: rgba(0,0,0,.4);
+  display: none;
+}
+.ui-dialog-cnt {
+  color: #333333;
+  margin: 0 auto;
+  margin-top: 50%;
+  width: 8.4rem;
+  background-color: rgba(253,253,253,.95);
+  font-size: 0.48rem;
+  border-radius: 0.12rem;
+}
+.ui-dialog-bd {
+  padding-top: 1.2rem;
+  margin-bottom: 0.72rem;
+}
+.ui-dialog-bd>h2, .ui-dialog-bd>h3 {
+  width: 100%;
+  text-align: center;
+}
+h3 {
+
+}
+
+.ui-dialog-ft {
+  padding-bottom: 1.2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+.ui-dialog-ft button {
+  font-size: 0.48rem;
+  width: 3.24rem;
+  height: 1.2rem;
+  border-radius: 0.12rem;
+  background: #fafafa;
+  border:1px solid #cccccc;
+  margin-right: 0.48rem;
+  font-family: "微软雅黑", "Droid Sans Fallback";
+}
+.ui-dialog-ft .ui-btn-primary{
+  color: #FFFFff;
+  margin-right: 0rem;
+  border: none;
+  background: #46be78;
+}

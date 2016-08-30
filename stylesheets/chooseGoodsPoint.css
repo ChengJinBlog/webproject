@@ -1,0 +1,516 @@
+/*头部区域 搜索区 navbar-main start*/
+  html{
+    overflow:hidden;
+  }
+  body{
+    -webkit-user-select: none;
+    overflow:auto;
+  }
+  .inform-link{
+    width:100%;
+    height:1rem;
+    line-height:0.9rem;
+    display:block;
+    position:relative;
+    color:#999999;
+  }
+
+  .inform-selector{
+    position: absolute;
+    top:0.1rem;
+    left:-1.05rem;
+    display: inline-block;
+    width: 0.65rem;
+    height: 0.65rem;
+    line-height: 0.697rem;
+    text-align: center;
+    cursor: pointer;
+    border: 0.05rem solid #cccccc;
+    border-radius: 100%;
+    overflow: hidden;
+    float:left;
+  }
+  .icon-iconchoicedefault{
+    color:#ff9000;
+    width: 0.65rem;
+    height: 0.65rem;
+    line-height: 0.66rem;
+    font-size:0.66rem;
+  }
+
+  .inform-td-icon{
+    display: inline-block;
+    width: 0.65rem;
+    height: 0.65rem;
+    line-height: 0.697rem;
+    text-align: center;
+    cursor: pointer;
+    border: 0.05rem solid #cccccc;
+    border-radius: 100%;
+    overflow: hidden;
+    float:left;
+    margin-top:0.15rem;
+  }
+
+/*头部区域 搜索区 navbar-main end*/
+
+/*--内容区 start--*/
+.container-main {
+  width: 100%;
+  height: 100%;
+  margin-top: 1.32rem;
+  margin-bottom: 2.96rem;
+  background: #ebebeb;
+}
+.container-main .inform-tab {
+  background: #ebebeb;
+}
+.container-main .inform-tab .inform-list {
+  display: block;
+  background: #ffffff;
+  border-bottom: 0.01rem solid #cccccc;
+  font-size: 0.48rem;
+}
+.container-main .inform-tab .inform-list::after {
+  display: block;
+  content: "clear";
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.container-main .inform-tab .inform-list > li {
+  float: left;
+  height: 1.2rem;
+  width: 33.333%;
+  text-align: center;
+  color: #999999;
+}
+.container-main .inform-tab .inform-list > li > span {
+  display: inline-block;
+  width: 100%;
+  height: 1.17rem;
+  line-height: 1.17rem;
+}
+.inform-tab > div {
+  display: block;
+  height: 100%;
+  overflow-x: auto;
+  margin-top: 0.25rem;
+  background: #FFf;
+}
+.inform-tab > .inform-box:first-child {
+  margin-top: 0.25rem !important;
+}
+.line{
+	display: block;
+	border-bottom: 0.06rem solid #00a53c;
+	transition: left 0.3s ease-out;
+	position: relative;
+  width: 2rem;
+	left: 0;
+  top: -0.06rem;
+  margin:0 auto;
+}
+.inform-show {
+  display: block !important;
+}
+.inform-tab {
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+  empty-cells: show;
+  border-collapse: collapse;
+  background: #FFf;
+}
+.inform-tab tbody {
+  background: #ffffff;
+
+}
+.inform-tab tr {
+  background: #ffffff;
+}
+.inform-tab tr td {
+  padding: 0.48rem 0.36rem;
+}
+.inform-tab tr td:nth-child(1) {
+  width: 0.72rem;
+  text-align: left;
+  vertical-align: top;
+}
+.td-vertical {
+  vertical-align: inherit !important;
+}
+.inform-add {
+  margin-bottom: 0rem !important;
+  font-size:0.48rem;
+}
+.inform-add > span{font-size:0.48rem;}
+.inform-add > span:first-child{}
+.inform-add > span:last-child{padding-left:0.24rem;}
+.inform-tab tr td:nth-child(2) {
+  padding-left: 0;
+  text-align: left;
+  border-bottom: 0.01rem solid #ddd;
+}
+.inform-tab tr:last-child td:nth-child(2) {
+  border-bottom: 0;
+}
+.inform-tab tr:last-child td:nth-child(3) {
+  border-bottom: 0;
+}
+
+.inform-tab tr:last-child > td{
+  border-bottom:none;
+}
+
+
+
+
+.inform-tab tr td > input[type="checkbox"] {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+.inform-tab tr td > p {
+  font-size: 0.48rem;
+}
+.inform-tab tr td > p:first-child {
+  margin-bottom: 0.18rem;
+  line-height: 0.8rem;
+  /*display: inherit;*/
+}
+.inform-tab tr td > p:last-child {
+  color: #999999;
+  display: initial;
+}
+.inform-tab tr td > p > span:first-child {
+  margin-right: 0.46rem;
+}
+/*内容区选择框 start************************************************/
+.inform-tab tr td > input[type="checkbox"] {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background-color: #fff;
+  border: 0.03rem solid #cccccc;
+  border-radius: 100%;
+  padding: 0.1rem;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  font-family: 'iconfont';
+  outline: none;
+}
+.inform-tab tr td > input[type="checkbox"]:checked,
+input[type="checkbox"] :indeterminate {
+  background-color: #f26722;
+  /*border-color: #f26722;*/
+  color: #fff;
+  outline: none;
+}
+.inform-tab tr td > input[type="checkbox"]:checked:after,
+.foot-agreement .inform-tab tr td > input[type="checkbox"]:indeterminate:after {
+  content: '\e678';
+  /*添加字体打钩的样式*/
+  font-size: 0.39rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  width: 0.18rem;
+  height: 0.18rem;
+  text-align: center;
+  color: #ffffff;
+}
+.inform-tab tr td > input[type="checkbox"]:indeterminate {
+  background-color: #eee;
+}
+.inform-tab tr td > input[type="checkbox"]:indeterminate:after {
+  text-shadow: 0.02rem 0.02rem 0 #f9f9f9;
+}
+/*内容区选择框 end*************************************************/
+.inform-tab tr td:nth-child(3) {
+  width: 2.5rem;
+  padding-left: 0;
+  border-bottom: 0.01rem solid #ddd;
+
+}
+.inform-tab tr td:nth-child(3) .inform-update {
+  float: right;
+  color: #cccccc;
+  text-align: right;
+  font-size:0.48rem;
+}
+.inform-tab tr td:nth-child(3) .inform-update .inform-icon {
+  display: inline-block;
+  line-height: 1.42rem;
+  text-align: left;
+  padding-left: 0.24rem;
+  font-size: 0.42rem;
+}
+/*暂无收货人*/
+.inform-Noconsignee {
+  height: 13.6rem;
+  line-height: 13.6rem;
+  background: #ebebeb;
+  text-align: center;
+  color: #999;
+}
+.inform-text {
+  padding: 0 0.36rem;
+  text-indent: 0.8rem;
+  line-height: 0.64rem;
+  color: #333;
+  font-size: 0.48rem;
+  background: #ebebeb;
+}
+.inform-padding-left {
+  padding-left: 0.36rem;
+  border-bottom: .01rem solid #CCCCCC;
+}
+.inform-user-width {
+  width: 2rem !important;
+  border-bottom: 0.01rem solid #ddd;
+  padding-left: 0 !important;
+}
+.inform-user-width .inform-user-title {
+  text-align: left;
+  color: #333 !important;
+}
+.inform-input .inform-user-name {
+  width: 90%;
+  /*height: 0.48rem;*/
+  font-family: "微软雅黑", "Droid Sans Fallback";
+  font-size: 0.48rem;
+  border: none;
+  color: #666;
+  float:left;
+}
+.inform-input:after{
+  display:block;
+  content:"clear";
+  height:0;
+  clear:both;
+  overflow:hidden;
+  visibility:hidden;
+}
+.inform-tab tr:last-child .inform-user-width {
+  border: none;
+}
+/*--内容区 end--*/
+.button-box {
+  margin-top: 0.6rem;
+  padding: 0 0.36rem;
+}
+.button-box .button-end {
+  width: 100%;
+  height: 1.44rem;
+  border-radius: 0.1rem;
+  border: none;
+  outline: none;
+  font-size: 0.54rem;
+  background: #cccccc;
+  font-family: "微软雅黑", "Droid Sans Fallback";
+  color: #ffffff;
+}
+/*--底部 start--*/
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.footer .footer-container-fluid {
+  /*height:147rem/@size;*/
+}
+.footer .footer-container-fluid .foot-agreement {
+  height: 1.47rem;
+  background: #ffffff;
+  padding-right: 0.36rem;
+  border-top: 0.01rem solid #cccccc;
+  color: #cccccc;
+  font-size: .48rem;
+}
+.footer .footer-container-fluid .foot-agreement .foot-label {
+  float: left;
+  display: inline-block;
+}
+.footer .footer-container-fluid .foot-agreement .foot-label > span > a{
+  margin-left: 0.36rem;
+  color: #999;
+  text-decoration: underline;
+}
+.footer .footer-container-fluid .foot-agreement .foot-label > span:nth-child(1) {
+  text-align: center;
+  float: left;
+  width: 1.47rem;
+  height: 1.47rem;
+  line-height: 1.47rem;
+}
+.footer .footer-container-fluid .foot-agreement .foot-label > span > input[type="checkbox"] {
+  width: 0.72rem;
+  height: 0.72rem;
+}
+.footer .footer-container-fluid .foot-agreement .foot-label > span:nth-child(2) {
+  text-align: center;
+  float: left;
+  height: 1.47rem;
+  line-height: 1.47rem;
+}
+.footer .footer-container-fluid .foot-agreement > a {
+  text-align: center;
+  color: #999999;
+  float: right;
+  height: 1.47rem;
+  line-height: 1.47rem;
+  text-decoration: underline;
+}
+/*协议选择框 start************************************************/
+.foot-agreement .foot-label > span > input[type="checkbox"] {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background-color: #fff;
+  border: 0.03rem dashed #868484;
+  border-radius: 20%;
+  padding: 0.1rem;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+  font-family: 'iconfont';
+  outline: none;
+}
+.foot-agreement .foot-label > span > input[type="checkbox"]:checked,
+input[type="checkbox"] :indeterminate {
+  /* background-color: #f26722;*/
+  /*border-color: #f26722;*/
+  color: #fff;
+  outline: none;
+}
+.foot-agreement .foot-label > span > input[type="checkbox"]:checked:after,
+.foot-agreement .foot-label > span > input[type="checkbox"]:indeterminate:after {
+  content: '\e678';
+  /*添加字体打钩的样式*/
+  font-size: 0.39rem;
+  position: absolute;
+  top: 0.1rem;
+  left: 0.1rem;
+  width: 0.18rem;
+  height: 0.18rem;
+  text-align: center;
+  color: #ff9000;
+}
+.foot-agreement .foot-label > span > input[type="checkbox"]:indeterminate {
+  background-color: #eee;
+}
+.foot-agreement .foot-label > span > input[type="checkbox"]:indeterminate:after {
+  text-shadow: 0.02rem 0.02rem 0 #f9f9f9;
+}
+/*协议选择框 end*************************************************/
+.footer .footer-container-fluid .footer-btn {
+  width: 100%;
+  height: 1.47rem;
+  font-size: 0.54rem;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  font-family: "微软雅黑", "Droid Sans Fallback";
+  display: block;
+  line-height: 1.47rem;
+  text-align: center;
+  background: #cccccc;
+}
+.footer-btn-gray{
+  background: #cccccc;
+  color: #ffffff;
+}
+.peorer{
+	background: #ff9000 !important;
+}
+
+
+.footer-btn-orang{
+  background:#ff9000;
+  color:#FFF;
+}
+/*--底部 end--*/
+
+
+/*显示最近历史记录信息 样式 start*/
+.inform-List-title{
+  padding: 0.48rem 0.36rem 0 0.36rem;
+  color: #333;
+  font-size: 0.42rem;
+}
+.inform-List-del{
+  display: block;
+  padding: 0 0.36rem 0 0.36rem;
+  text-align: center;
+  color: #333;
+  height: 1rem;
+  line-height: 1rem;
+  font-size:0.42rem;
+}
+
+
+.inform-List{
+  padding: 0.36rem 0.36rem 0 0.36rem;
+}
+.inform-List > li{
+  line-height:0.9rem;
+  border-bottom:0.01rem solid #ddd;
+}
+.inform-List > li > a{
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.42rem;
+  padding: 0.12rem 0;
+}
+/*显示最近历史记录信息 样式 end*/
+
+
+/*显示没有信息的样式*/
+.windowText{
+  height: 13.2rem;
+  line-height: 13.2rem;
+  text-align: center;
+  color: gray;
+  background: #ebebeb;
+}
+
+.hidden{
+	display: none;
+	}
+.leave-img,.leave-imgt{
+	color: #999999;
+  float:left;
+}
+
+/*查看协议*/
+.layer-infor{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.3);
+  z-index: 999;
+}
+.layer-box{
+    position: relative;
+    top: 32%;
+    width: 8.0rem;
+    background: #FFF;
+    margin: -0.4rem auto;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.line{
+	top : 0 !important;
+	}
+
+.footerNavs{
+  height:2.96rem !important;
+}
+.footer-nav{
+  height:1.47rem;
+}

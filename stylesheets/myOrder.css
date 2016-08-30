@@ -1,0 +1,169 @@
+*{
+    border: 0;
+}
+html{
+    height: 100%;
+    overflow-x: hidden;
+}
+body{
+    font-family: "微软雅黑", "Droid Sans Fallback";
+    color: #333;
+}
+.main{
+    margin-top: 1.33rem;
+}
+
+/********************tab header************/
+.main ul.tab {
+     height: 1.2rem;
+     line-height: 1.2rem;
+     background: #FFFFff;
+     border-top:1px solid #bbbbbb;
+     border-bottom:1px solid #bbbbbb;
+     position: fixed;
+     z-index: 1;
+     width: 100%;
+ }
+.main ul.tab li{
+    float: left;
+    width: 33.333%;
+    height: 1.2rem;
+    text-align: center;
+    font-size: 0;
+}
+.main ul.tab li a{
+    color: #666;
+    font-size: 0.48rem;
+    height: 1.2rem;
+    display: block;
+}
+.main ul.tab li a:visited{
+   background: #fff;
+}
+.main ul.tab li a:active{
+   background: #fff;
+}
+.main ul.tab li .tab-active{
+    height: 0.06rem;
+    background: #00a53c;
+}
+
+/********************tab content************/
+.main .tab-content {
+    padding-top: 1.2rem;
+}
+.main .tab-content .tab-pane ul li{
+   margin-top: 0.24rem;
+    background: #FFFFff;
+    font-size: 0.42rem;
+}
+.main .tab-content .tab-pane ul li .order-info{
+    height: 0.96rem;
+    line-height: 0.96rem;
+    padding: 0 0.36rem;
+}
+.main .tab-content .tab-pane ul li .order-info .order-status{
+    color: #ff9000;
+    float: right;
+}
+.main .tab-content .tab-pane ul li .order-product{
+    background: #f5f5f5;
+}
+.main .tab-content .tab-pane ul li .order-product .product-main{
+    background: #f5f5f5;
+    padding: 0.15rem 0.36rem;
+    overflow-x:scroll;
+    position: relative;
+}
+.main .tab-content .tab-pane ul li .order-product .product-main .p-img {
+    font-size: 0;
+    display: inline-block;
+}
+.main .tab-content .tab-pane ul li .order-product .product-main .p-img  img {
+    width: 2.1rem;
+    height: 2.1rem;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+
+}
+.main .tab-content .tab-pane ul li .order-product .product-main .p-img  img:last-of-type{
+    margin-right: 0px;
+}
+
+.main .tab-content .tab-pane ul li .order-product .product-main .p-name {
+    position: absolute;
+    font-size: 0.42rem;
+    color: #666;
+    top: 0.24rem;
+    padding:0 0.36rem;
+    line-height: 0.56rem;
+}
+.main .tab-content .tab-pane ul li .order-sum{
+    height: 0.96rem;
+    line-height: 0.96rem;
+    text-align: right;
+    padding: 0 0.36rem;
+    border-bottom: 1px solid #ddd;
+}
+.main .tab-content .tab-pane ul li .order-sum .order-price{
+    font-size: 0.54rem;
+}
+.main .tab-content .tab-pane ul li .order-oper{
+    height: 1.44rem;
+    line-height: 1.44rem;
+    text-align: right;
+    padding: 0 0.36rem;
+    border-bottom: 1px solid #ccc;
+}
+.main .tab-content .tab-pane ul li .order-oper button{
+    height: 0.96rem;
+    width: 2.54rem;
+    font-size: 0.42rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 0.12rem;
+    border: 1px solid #666;
+    margin-left: 0.36rem;
+    font-family: "微软雅黑", "Droid Sans Fallback";
+}
+.main .tab-content .tab-pane ul li .order-oper button.order-pay{
+   color: #fff;
+    background: #ff9000;
+    border: none;
+}
+.main .tab-content .empty{
+    text-align: center;
+    margin-top: 2.4rem;
+    display: none;
+}
+.main .tab-content .empty i{
+    font-size: 3.6rem;
+    color: #666;
+}
+.main .tab-content .empty p{
+    color: #333;
+    font-size: 0.48rem;
+    margin-top: 0.24rem;
+}
+
+.line{
+    display: block;
+    border-bottom: 0.06rem solid #00a53c;
+    transition: left 0s;
+    position: relative;
+    width: 2.1rem;
+    left: 0;
+    top: -0.06rem;
+    margin:0 auto;
+}
+button{
+	outline: none;
+}
+.preloader{
+    display: none;
+    text-align: center;
+    padding: 0.21rem;
+}
+.visible{
+    display: block;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <link href="stylesheets/common/reset.css" rel="stylesheet">
+    <link href="stylesheets/common/navigation.css" rel="stylesheet">
+    <link href="fonts/iconfont.css" rel="stylesheet">
+    <link href="stylesheets/common/swiper.min.css" rel="stylesheet">
+    <link href="stylesheets/product-detail.css" rel="stylesheet">
+    <script src="script/common/adaptive.js" type="text/javascript"></script>
+    <script>
+        window['adaptive'].desinWidth = 1080;
+        window['adaptive'].baseFont = 18;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].init();
+    </script>
+</head>
+<body>
+<div class="container">
+	<form action="http://127.0.0.1:8020/%E7%A1%AE%E8%AE%A4%E8%AE%A2%E5%8D%95/json/data.json" id="demo" onsubmit="return saveReport();">
+    <div class="main">
+        <!--<div class="delect"><i class="iconfont icon-iconclose01default"></i></div>-->
+        <div class="product">
+            <div class="p-contain" >
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/pro0.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pro1.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/pro2.png">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!--<div class="p-img">-->
+                <!--&lt;!&ndash;<img src="images/products.png">&ndash;&gt;-->
+            <!--</div>-->
+            <div class="p-header">
+                   <div class="p-package">
+                       <span class="package-name">小麦一喷三防套餐（春耕解决方案详情）（春耕解决方案详情）</span>
+                       <div>
+                           <span class="package-special">￥32.50</span>
+                           <span class="package-original">原价￥39.00</span>
+                       </div>
+                   </div>
+               </div>
+
+            <div class="p-info">
+                <div class="single-info">
+                    <span class="single-brand">品牌: 瑞德丰</span>
+                    <span class="single-rule">规格: 300克/瓶</span>
+                    <span class="single-number">X 4瓶</span>
+                </div>
+            </div>
+            <div class="p-detail">
+                <ul id="myTab" class="tab inform-list">
+                    <li>
+                        <a href="javascript:void (0);" data-toggle="tab">商品详情</a>
+                        <i class="line"></i>
+                    </li>
+                    <li><a href="javascript:void (0);" data-toggle="tab">商品参数</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane" id="product-info">
+                        <div class="empty">
+                            <p class="tip">商品描述暂未添加</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane tab-active" id="product-param">
+                        <div class="empty">
+
+                            <p class="tip">商品描述暂未添加</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container-fluid">
+                <div class="amount">
+                    <table>
+                        <tr>
+                            <td>购买数量</td>
+                            <td>
+                                <div class="amount-main">
+                                    <a id="reduce" class="number-active"><i class="iconfont icon-iconfontminus"></i></a>
+                                    <input type="text" value="1" id="number">
+                                    <a id="add"><i class="iconfont icon-iconfollow01default"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="footer-nav">
+                    <a href="#"><button type="button" class="footer-btn btnJump" id="bug">点击购买</button></a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    </form>
+</div>
+</body>
+<script src="script/common/zepto.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="script/common/utls.js"></script>
+<script src="script/common/swiper.min.js" type="text/javascript"></script>
+<script src="script/product-detail.js" type="text/javascript"></script>
+</html>

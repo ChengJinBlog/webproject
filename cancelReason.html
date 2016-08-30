@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <!--↑↑模板中请务必使用HTML5的标准head结构↑↑-->
+    <meta name="generator" content="b2b2c">
+    <meta name="author" content="shopex UED Team">
+    <title>测试环境，请勿进行真实业务行为_田田淘商城</title>
+    <meta name="noindex" content="noindex">
+    <link rel="icon" href="http://172.168.6.134/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://172.168.6.134/favicon.ico" type="image/x-icon">
+    <link href="http://172.168.6.134/app/topm/statics/stylesheets/base.css?201606080926" rel="stylesheet" media="screen, projection" /><script src="http://172.168.6.134/app/topm/statics/scripts/zepto.js?201606080926"></script><script src="http://172.168.6.134/app/topm/statics/scripts/fastclick.js?201606080926"></script><script src="http://172.168.6.134/app/topm/statics/scripts/gmu.js?201606080926"></script><script src="http://172.168.6.134/app/topm/statics/scripts/common.js?201606080926"></script><script src="http://172.168.6.134/app/topm/statics/scripts/message.js?201606080926"></script><script src="http://172.168.6.134/app/topm/statics/scripts/validate.js?201606080926"></script><title>测试环境，请勿进行真实业务行为_田田淘商城</title>
+    <link type='image/x-icon' href='http://cdn.tttao8.cn/images/e5/2e/31/2e06c6684ffd38f396b08824015a708dfbc89157.jpg' rel='apple-touch-icon-precomposed'>
+
+    <link rel="stylesheet" href="http://172.168.6.134/themes/wapmall/images/index.css">
+    <style type="text/css">
+        .list-hd .tit{
+            background: #fafafa;
+            color: #333;
+            border-bottom: 1px solid #bbb;
+        }
+        .list-hd .backto{
+            color: #666;
+        }
+        .status-info,.info-area{
+            border-top: none;
+        }
+
+    </style>
+</head>
+<body>
+<div class="order-cancel">
+    <header>
+        <div class="list-hd">
+            <div class="backto icon-back ">
+                <input type="button" name="returnBcak" onclick="history.back()">
+            </div>
+            <div class="tit">
+                取消订单    </div>
+        </div>
+    </header>  <div class="main">
+    <div class="status-info info-area">
+        <div class="info-l info">
+            <span class="icon icon-book"></span>
+        </div>
+        <div class="info-m">
+            <span class="status">未发货</span>
+
+            <table>
+                <tr class="theme">
+                    <td class="tit">商品金额</td>
+                    <td class="con"> 175.00</td>
+                </tr>
+                <tr class="more">
+                    <td class="tit">运费：</td>
+                    <td class="con">0.00</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <form action="http://172.168.6.134/index.php/wap/cancel-buyer.html" method="post" class="cancel-form">
+        <input type="hidden" name="tid" value="1606221631270457" class="cancel-tid">
+        <div class="cancel-reason">
+            <div class="ui-btn-group">
+                <ul>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input1" class="button" type="radio" checked name="cancel_reason" value="1">
+                        <label for="input1">
+                            <span class="ui-btn-text">现在不想购买</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input2" class="button" type="radio"  name="cancel_reason" value="2">
+                        <label for="input2">
+                            <span class="ui-btn-text">商品价格较贵</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input3" class="button" type="radio"  name="cancel_reason" value="3">
+                        <label for="input3">
+                            <span class="ui-btn-text">价格波动</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input4" class="button" type="radio"  name="cancel_reason" value="4">
+                        <label for="input4">
+                            <span class="ui-btn-text">商品缺货</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input5" class="button" type="radio"  name="cancel_reason" value="5">
+                        <label for="input5">
+                            <span class="ui-btn-text">重复下单</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input6" class="button" type="radio"  name="cancel_reason" value="6">
+                        <label for="input6">
+                            <span class="ui-btn-text">订单商品选择有误</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input7" class="button" type="radio"  name="cancel_reason" value="7">
+                        <label for="input7">
+                            <span class="ui-btn-text">支付方式选择有误</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input8" class="button" type="radio"  name="cancel_reason" value="8">
+                        <label for="input8">
+                            <span class="ui-btn-text">收货信息填写有误</span>
+                        </label>
+                    </li>
+
+                    <li>
+                        <span class="choose"></span>
+                        <input id="input10" class="button" type="radio"  name="cancel_reason" value="10">
+                        <label for="input10">
+                            <span class="ui-btn-text">无法支付订单</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="choose"></span>
+                        <input id="inputother" class="button" type="radio"  name="cancel_reason" value="other">
+                        <label for="inputother">
+                            <span class="ui-btn-text">其他原因</span>
+                        </label>
+                    </li>
+                    <li id="other">
+                        <textarea name="other_reason" cols="5" size="300" rows="3" maxlength="300" placeholder="请填写取消订单原因"></textarea>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="send-apply">
+            <button type="submmit" class="ui-btn-warning">确认取消</button>
+        </div>
+    </form>
+</div>
+    <!--返回顶部-->
+    <div id="gotop"></div>
+</div>
+
+
+<script>
+    $('.button').button();
+
+    $('.button').change(function(e) {
+        $(this).siblings('span').addClass('chosen').parent().siblings().children('span').removeClass('chosen');
+        if(this.value == 'other') {
+            $('#other').show().find('textarea')[0].required = true;
+        }
+        else {
+            $('#other').hide().find('textarea')[0].required = false;
+        }
+    }).eq(0).trigger('change');
+</script>
+
+</body>
+</html>

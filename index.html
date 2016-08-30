@@ -1,76 +1,175 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title id="title">自提点</title>
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!--css-->
+    <link rel="stylesheet" href="stylesheets/common/reset.css">
+    <link rel="stylesheet" href="stylesheets/common/iconfont.css">
+    <link rel="stylesheet" href="stylesheets/common/navigation.css">
+    <link rel="stylesheet" href="stylesheets/chooseGoodsPoint.css">
 
-    <title>Webproject by ChengJinBlog</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Webproject</h1>
-        <h2>Personal blog</h2>
-        <a href="https://github.com/ChengJinBlog/webproject" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/ChengJinBlog/webproject/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/ChengJinBlog/webproject/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/ChengJinBlog/webproject"></a> is maintained by <a href="https://github.com/ChengJinBlog">ChengJinBlog</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+    <script src="script/common/adaptive.js"></script>
+    <script type="text/javascript">
+    	window['adaptive'].desinWidth = 1080;
+		window['adaptive'].baseFont = 18;
+		window['adaptive'].maxWidth = 480;
+		window['adaptive'].init();
+    </script>
+</head>
+<body>
+<!--头部 start-->
+<nav class="navbar" id="navbar">
+    <div class="navbar-container-fluid">
+        <div class="navbar-link">
+            <a class="navbar-brand iconfont icon-iconreturndefault" href="sureOrder.html"></a>
+        </div>
+        <div class="navbar-main">
+            <div class="navbar-seachGoodlsAddr">
+                <!--<button class="navbar-btn iconfont icon-icon06"></button>-->
+                <input class="navbar-seach" type="text" placeholder="查找提货点">
+                <i class="seach-deleIcon iconfont icon-icondeletedefault"></i>
+            </div>
+        </div>
+        <div class="navbar-link navbar-right">
+            <button class="ui-searchbar-cancel">搜索</button>
+        </div>
     </div>
+</nav>
+<!--头部 end-->
 
-  
-  </body>
+<!--内容区 start-->
+<section class="container-main">
+     <div class="inform-tab">
+         <ul class="inform-list" id="inform-list-type">
+             <li class="inform-all inform-select" title="all"><span>全部</span><i class="line"></i></li>
+             <li class="inform-stores" title="store"><span>只看门店</span></li>
+             <li class="inform-tiange" title="person"><span>只看田哥</span></li>
+         </ul>
+         <div class="inform-box inform-show">
+             <div class="inform-List-box"  style="display:none;">
+                 <p class="inform-List-title">历史搜索记录</p>
+                 <ul class="inform-List">
+                     <!-- <li onclick="oHistory(this)"><a href="javascript:void(0);">田田哥</a></li>
+                     <li onclick="oHistory(this)"><a href="javascript:void(0);">田田姐</a></li>
+                     <li onclick="oHistory(this)"><a href="javascript:void(0);">田田妹</a></li>
+                     <li onclick="oHistory(this)"><a href="javascript:void(0);">田田弟</a></li> -->
+                 </ul>
+                 <a href="javascript:void(0);" class="inform-List-del">清除</a>
+             </div>
+             <table class="inform-tab"  id="inform-tab" ram="">
+                 <tr>
+                     <td class="inform-click">
+                         <span class="inform-td-icon"><i class="iconchoicedefault"></i></span>
+                     </td>
+                     <td class="inform-click">
+                         <p class="inform-title" data-title="4">定陶县兴华路中国工商银行十字路口往西前行200米右转</p>
+                         <p class="inform-add"><span>田田圈牡丹店</span><span>18805309998</span></p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td class="inform-click">
+                         <span class="inform-td-icon"><i class="iconchoicedefault"></i></span>
+                     </td>
+                     <td class="inform-click">
+                         <p class="inform-title" data-title="15">吴店镇孟庄村</p>
+                         <p class="inform-add"><span>钟华仙</span><span>13432905426</span></p>
+                     </td>
+                 </tr>
+                 <!--<p class='windowText'>"+obj.error+"</p>-->
+             </table>
+         </div>
+     </div>
+</section>
+<!--内容区 end-->
+
+<!--底部 start-->
+<footer class="footer footerNavs">
+    <div class="footer-container-fluid">
+        <div class="foot-agreement">
+            <label class="foot-label">
+                <span><input type="checkbox" checked="true" class="foot-checkbox"></span>
+                <span>我已阅读并同意提货协议 <a class="agreement-inform" href="javascript:void(0);">查看协议</a></span>
+            </label>
+
+        </div>
+        <div class="footer-nav">
+            <button href="http://hu.com/index.php/app/cart-checkout.html?" class="footer-btn footer-activeaddress-btn">确定</button>
+        </div>
+    </div>
+</footer>
+
+<!--底部 end-->
+<style type="text/css">
+    .layer-header,.layer-button{
+        width:100%;
+        height:1.2rem;
+        background:#FFF;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+    .layer-header .layer-close{
+        font-size:0.42rem;
+        color:#ccc;
+        display: inline-block;
+        width:1.2rem;
+        height:1.2rem;
+        line-height: 1.2rem;
+        cursor: pointer;
+        text-align: center;
+        float:right;
+    }
+    .layer-box .layer-content{
+        padding:0 0.36rem;
+    }
+    .layer-tite{
+        font-size:0.54rem;
+        text-align: center;
+    }
+    .layer-box .layer-content .layer-text{
+         padding:0.48rem 0 0;
+         overflow-x: auto;
+         text-align: justify;
+    }
+    .layer-p{
+        line-height: 0.72rem;
+        text-indent: 0.5rem;
+        word-break: break-all;
+        word-wrap: break-word;
+        font-size: 0.48rem;
+    }
+</style>
+<!--查看协议 start-->
+<div class="layer-infor" style="display:none">
+    <div class="layer-box">
+        <div class="layer-header">
+             <span class="layer-close iconfont icon-iconclosedefault"></span>
+        </div>
+        <div class="layer-content">
+            <h3 class="layer-tite">提货须知</h3>
+            <div class="layer-text">
+                <p class="layer-p">选择“自提货物”的客户,请在支付成功后,凭借手机短信或成功支付通知到自提点提货。请在提货时向店员或田哥田姐出示凭据并根据提示完成操作。</p>
+
+            </div>
+        </div>
+        <div class="layer-button"></div>
+    </div>
+</div>
+<!--查看协议 end-->
+
+<!--url地址-->
+<input type="hidden" value="http://hu.com/index.php/app/check-ziti.html?mode=fastbuy&shop_id=99" id="url">
+
+<!--js-->
+<script src="script/common/zepto.min.js"></script>
+<script src="script/common/utls.js"></script>
+<script src="script/findAddress.js"></script>
+
+</body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="./stylesheets/common/reset.css">
+    <link href="./stylesheets/common/iconfont.css" rel="stylesheet" media="screen, projection">
+    <link rel="stylesheet" href="./stylesheets/common/navigation.css">
+    <link rel="stylesheet" href="./stylesheets/payError.css">
+
+</head>
+	<body>
+		<!--头部 start-->
+<nav class="navbar">
+    <div class="navbar-container-fluid">
+        <div class="navbar-link">
+            <a class="navbar-brand iconfont icon-iconreturndefault" href="sureOrder.html"></a>
+        </div>
+        <div class="navbar-main">
+            <h1 id="navbar-title">选择支付方式</h1>
+        </div>
+    </div>
+</nav>
+<!--头部 end-->
+
+<!--内容区 start-->
+
+<form action="s">	
+<section class="container-main">
+	<div>
+    	<i class="iconfont icon-blankpagenocontent"></i>
+    	<dl>暂时无法支付</dl>
+    	<dd>请稍后重试</dd>
+    	<button type="button">刷新</button>
+   </div>
+</section>
+</form>
+<!--内容区 end-->
+
+
+<script src="script/common/zepto.min.js"></script>
+<script src="script/common/adaptive.js"></script>
+<script type="text/javascript" src="script/common/utls.js"></script>
+<script>
+    window['adaptive'].desinWidth = 1080;
+    window['adaptive'].baseFont = 18;
+    window['adaptive'].maxWidth = 480;
+    window['adaptive'].init();
+	show.butColor('button','touchstart','#389860','#cccccc')		
+	show.butColor('button','touchend','#46be78','#ffffff')
+	window.onload = function () {
+		$('button').on('tap',function(){
+	     	window.location.reload()
+	     })	
+	}
+</script>
+</body>
+</html>
