@@ -1,8 +1,3 @@
-window['adaptive'].desinWidth = 1080;
-window['adaptive'].baseFont = 18;
-window['adaptive'].maxWidth = 480;
-window['adaptive'].init();
-
 var blankStr = document.querySelector('.address').innerText;
 var blankN = document.querySelector('.name').innerText;
 blankStr = blankStr.replace(/\s+/g,"");   

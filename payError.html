@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="./stylesheets/common/navigation.css">
     <link rel="stylesheet" href="./stylesheets/payError.css">
 
+    <script src="script/common/adaptive.js"></script>
+    <script type="text/javascript">
+        window['adaptive'].desinWidth = 1080;
+        window['adaptive'].baseFont = 18;
+        window['adaptive'].maxWidth = 480;
+        window['adaptive'].init();
+    </script>
+
 </head>
 	<body>
 		<!--头部 start-->
@@ -45,13 +53,8 @@
 
 
 <script src="script/common/zepto.min.js"></script>
-<script src="script/common/adaptive.js"></script>
 <script type="text/javascript" src="script/common/utls.js"></script>
 <script>
-    window['adaptive'].desinWidth = 1080;
-    window['adaptive'].baseFont = 18;
-    window['adaptive'].maxWidth = 480;
-    window['adaptive'].init();
 	show.butColor('button','touchstart','#389860','#cccccc')		
 	show.butColor('button','touchend','#46be78','#ffffff')
 	window.onload = function () {

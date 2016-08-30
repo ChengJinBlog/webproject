@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title id="title">自提点</title>
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!--css-->
+    <link rel="stylesheet" href="stylesheets/common/reset.css">
+    <link rel="stylesheet" href="stylesheets/common/iconfont.css">
+    <link rel="stylesheet" href="stylesheets/common/navigation.css">
+    <link rel="stylesheet" href="stylesheets/chooseGoodsPoint.css">
+
+    <script src="script/common/adaptive.js"></script>
+    <script type="text/javascript">
+    	window['adaptive'].desinWidth = 1080;
+		window['adaptive'].baseFont = 18;
+		window['adaptive'].maxWidth = 480;
+		window['adaptive'].init();
+    </script>
+</head>
+<body>
+<!--头部 start-->
+<nav class="navbar" id="navbar">
+    <div class="navbar-container-fluid">
+        <div class="navbar-link">
+            <a class="navbar-brand iconfont icon-iconreturndefault" href="sureOrder.html"></a>
+        </div>
+        <div class="navbar-main">
+            <div class="navbar-seachGoodlsAddr">
+                <!--<button class="navbar-btn iconfont icon-icon06"></button>-->
+                <input class="navbar-seach" type="text" placeholder="查找提货点">
+                <i class="seach-deleIcon iconfont icon-icondeletedefault"></i>
+            </div>
+        </div>
+        <div class="navbar-link navbar-right">
+            <span class="ui-searchbar-cancel">搜索</span>
+        </div>
+    </div>
+</nav>
+<!--头部 end-->
+
+<!--内容区 start-->
+<section class="container-main">
+     <div class="inform-tab">
+         <ul class="inform-list" id="inform-list-type">
+             <li class="inform-all inform-select" title="all"><span>全部</span><i class="line"></i></li>
+             <li class="inform-stores" title="store"><span>只看门店</span></li>
+             <li class="inform-tiange" title="person"><span>只看田哥</span></li>
+         </ul>
+         <div class="inform-box inform-show">
+             <div class="inform-List-box"  style="display:none;">
+                 <p class="inform-List-title">历史搜索记录</p>
+                 <ul class="inform-List">
+                     <!-- <li onclick="oHistory(this)"><a href="javascript:void(0);">田田哥</a></li>
+                     <li onclick="oHistory(this)"><a href="javascript:void(0);">田田姐</a></li>
+                     <li onclick="oHistory(this)"><a href="javascript:void(0);">田田妹</a></li>
+                     <li onclick="oHistory(this)"><a href="javascript:void(0);">田田弟</a></li> -->
+                 </ul>
+                 <a href="javascript:void(0);" class="inform-List-del">清除</a>
+             </div>
+             <table class="inform-tab"  id="inform-tab" ram="">
+                 <tr>
+                     <td class="inform-click">
+                         <span class="inform-td-icon"><i class="iconchoicedefault"></i></span>
+                     </td>
+                     <td class="inform-click">
+                         <p class="inform-title" data-title="4">定陶县兴华路中国工商银行十字路口往西前行200米右转</p>
+                         <p class="inform-add"><span>田田圈牡丹店</span><span>18805309998</span></p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td class="inform-click">
+                         <span class="inform-td-icon"><i class="iconchoicedefault"></i></span>
+                     </td>
+                     <td class="inform-click">
+                         <p class="inform-title" data-title="15">吴店镇孟庄村</p>
+                         <p class="inform-add"><span>钟华仙</span><span>13432905426</span></p>
+                     </td>
+                 </tr>
+                 <!--<p class='windowText'>"+obj.error+"</p>-->
+             </table>
+         </div>
+     </div>
+</section>
+<!--内容区 end-->
+
+<!--底部 start-->
+<footer class="footer footerNavs">
+    <div class="footer-container-fluid">
+        <div class="foot-agreement">
+            <label class="foot-label">
+                <span><input type="checkbox" checked="true" class="foot-checkbox"></span>
+                <span>我已阅读并同意提货协议 <a class="agreement-inform" href="javascript:void(0);">查看协议</a></span>
+            </label>
+
+        </div>
+        <div class="footer-nav">
+            <button href="http://hu.com/index.php/app/cart-checkout.html?" class="footer-btn footer-activeaddress-btn">确定</button>
+        </div>
+    </div>
+</footer>
+
+<!--底部 end-->
+<style type="text/css">
+    .layer-header,.layer-button{
+        width:100%;
+        height:1.2rem;
+        background:#FFF;
+        line-height: 1.2rem;
+        text-align: center;
+    }
+    .layer-header .layer-close{
+        font-size:0.42rem;
+        color:#ccc;
+        display: inline-block;
+        width:1.2rem;
+        height:1.2rem;
+        line-height: 1.2rem;
+        cursor: pointer;
+        text-align: center;
+        float:right;
+    }
+    .layer-box .layer-content{
+        padding:0 0.36rem;
+    }
+    .layer-tite{
+        font-size:0.54rem;
+        text-align: center;
+    }
+    .layer-box .layer-content .layer-text{
+         padding:0.48rem 0 0;
+         overflow-x: auto;
+         text-align: justify;
+    }
+    .layer-p{
+        line-height: 0.72rem;
+        text-indent: 0.5rem;
+        word-break: break-all;
+        word-wrap: break-word;
+        font-size: 0.48rem;
+    }
+</style>
+<!--查看协议 start-->
+<div class="layer-infor" style="display:none">
+    <div class="layer-box">
+        <div class="layer-header">
+             <span class="layer-close iconfont icon-iconclosedefault"></span>
+        </div>
+        <div class="layer-content">
+            <h3 class="layer-tite">提货须知</h3>
+            <div class="layer-text">
+                <p class="layer-p">选择“自提货物”的客户,请在支付成功后,凭借手机短信或成功支付通知到自提点提货。请在提货时向店员或田哥田姐出示凭据并根据提示完成操作。</p>
+
+            </div>
+        </div>
+        <div class="layer-button"></div>
+    </div>
+</div>
+<!--查看协议 end-->
+
+<!--url地址-->
+<input type="hidden" value="http://hu.com/index.php/app/check-ziti.html?mode=fastbuy&shop_id=99" id="url">
+
+<!--js-->
+<script src="script/common/zepto.min.js"></script>
+<script src="script/common/utls.js"></script>
+<script src="script/findAddress.js"></script>
+
+</body>
+</html>

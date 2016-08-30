@@ -211,7 +211,15 @@ check.onclick = function(){
         check.removeAttribute("checked");
     }
 };
-
+$('.foot-label').on('tap',function(){
+	if($('.footer-btn').css('background') === 'rgb(204, 204, 204)'){
+		show.butColor('.footer-btn','touchstart','#a3a3a3','#cccccc');
+		show.butColor('.footer-btn','touchend','#cccccc','#ffffff');
+	} else{
+		show.butColor('.footer-btn','touchstart','#cc7300','#cccccc');
+		show.butColor('.footer-btn','touchend','#ff9000','#ffffff');
+	}
+})
 /*****************************************************************
  *
  *   搜索内容 Ajax get

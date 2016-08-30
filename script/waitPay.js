@@ -1,7 +1,3 @@
-window['adaptive'].desinWidth = 1080;
-window['adaptive'].baseFont = 18;
-window['adaptive'].maxWidth = 480;
-window['adaptive'].init();
 show.butColor('.order','touchstart','#cc7300','#cccccc');
 show.butColor('.order','touchend','#ff9000','#ffffff');
 show.butColor('.del','touchstart','#cccccc','#cc7300');
