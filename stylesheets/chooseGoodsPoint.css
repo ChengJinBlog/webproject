@@ -514,3 +514,7 @@ input[type="checkbox"] :indeterminate {
 .footer-nav{
   height:1.47rem;
 }
+#btn{
+	 background: #ff9000;
+   color: #FFF
+}
